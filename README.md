@@ -13,7 +13,7 @@ Base Docker-Image that includes [glibc](https://github.com/sgerrand/alpine-pkg-g
 Extend in your Dockerfile like so:
 
 ```
-FROM codeclou/docker-alpine-glibc:2.25-r0
+FROM codeclou/docker-alpine-glibc:2.25-rc0
 ...
 ```
 
