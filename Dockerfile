@@ -34,8 +34,7 @@ RUN apk add --no-cache \
     rm -rf /tmp/* /var/cache/apk/* /opt/glibc*  && \
     /usr/glibc-compat/bin/localedef -i en_US -f UTF-8 en_US.UTF-8 && \
     echo "export LANG=en_US.UTF-8" > /etc/profile.d/locale.sh && \
-    /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib && \
-    apk add --no-cache ttf-dejavu fontconfig
+    /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib
 
 
 ENV LANG en_US.UTF-8
